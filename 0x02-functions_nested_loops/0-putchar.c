@@ -1,21 +1,23 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * * main - Print the word "Main"
+ * * main - Lanzador
  * *
- * * Return: Always 0 (Success)
-*/
+ * * Return: Always 0
+ * *
+ */
 
 int main(void)
 {
-	int i;
-	char p[] = "Main";
-
-	for (i = 0; i < 9; i++)
-		{
-		_putchar(p[i]);
-		}
-		_putchar('\n');
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
+	_putchar('\n');
 	return (0);
 }
-
