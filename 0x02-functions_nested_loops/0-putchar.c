@@ -1,12 +1,21 @@
-#include "unistd.h"
+#include "main.h"
 
 /**
- *  * main - program that prints Holberton.
- *   *
- *    * Return: int
+ *  * main - entry block
+ *   * @void: no argument
+ *    * Return: 0
 */
 
-int _putchar(char c)
+int main(void)
 {
-	return (write(1, &c, 1));
+	char ermias[] = "_putchar";
+
+	int c;
+
+	for (c = 0; c < 8; c++)
+	{
+		_putchar(ermias[c]);
+	}
+	_putchar('\n');
+	return (0);
 }
