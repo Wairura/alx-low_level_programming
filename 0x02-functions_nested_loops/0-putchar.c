@@ -1,20 +1,21 @@
 #include "main.h"
 
 /**
- * * main - Print the word "Holberton"
- * *
- * * Return: Always 0 (Success)
+ *  * main - program that prints Holberton.
+ *   *
+ *    * Return: int
 */
 
 int main(void)
 {
-	int i;
-	char p[] = "Holberton";
+	int n = 0;
+	char str_hbt[9] = "Holberton";
 
-	for (i = 0; i < 9; i++)
-		{
-		_putchar(p[i]);
-		}
-		_putchar('\n');
+	while (n < 9)
+	{
+		_putchar(str_hbt[n]);
+		n += 1;
+	}
+	_putchar('\n');
 	return (0);
 }
