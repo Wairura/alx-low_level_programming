@@ -2,15 +2,13 @@
 #include <stdio.h>
 
 /**
- * mul - function that multiplies two integers
- * @a: First integer
- * @b: Second integer
- * Return: mul.
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
  */
-int mul(int a, int b)
+int main(void)
 {
-  int x;
-
-  x = a * b;
-  return (x);
+printf("%d\n", mul(98, 1024));
+printf("%d\n", mul(-402, 4096));
+return (0);
 }

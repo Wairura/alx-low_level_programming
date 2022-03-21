@@ -1,18 +1,15 @@
 #include "main.h"
-/**
- * print_square - function to print a square
- * @size: takes in the size of the square
- */
-void print_square(int size)
-{
-  int i, j;
 
-  if (size <= 0)
-    _putchar('\n');
-  for (i = 0; i < size; i++)
-    {
-      for (j = 0; j < size; j++)
-	_putchar('#');
-      _putchar('\n');
-    }
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+print_diagonal(0);
+print_diagonal(2);
+print_diagonal(10);
+print_diagonal(-4);
+return (0);
 }
