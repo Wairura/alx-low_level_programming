@@ -1,12 +1,20 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_numbers - entry point
  *
- * Return: Always 0.
+ * Description: Prints the numbers with _putchar
+ *
+ * Return: void
  */
-int main(void)
+
+void print_numbers(void)
 {
-print_numbers();
-return (0);
+int number;
+
+for (number = '0'; number <= '9'; number++)
+{
+_putchar(number);
+}
+_putchar('\n');
 }

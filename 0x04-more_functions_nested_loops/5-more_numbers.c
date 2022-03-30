@@ -1,12 +1,28 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * more_numbers - entry point
  *
- * Return: Always 0.
+ * Description: Prints the numbers with _putchar
+ *
+ * Return: void
  */
-int main(void)
+
+void more_numbers(void)
 {
-more_numbers();
-return (0);
+int number, tens, units, row;
+
+for (row = 1; row <= 10; row++)
+{
+for (number = 0; number <= 14; number++)
+{
+tens = number / 10;
+units = number % 10;
+if (number > 9)
+_putchar(tens + '0');
+
+_putchar(units + '0');
+}
+_putchar('\n');
+}
 }

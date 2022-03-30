@@ -1,15 +1,34 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_diagonal - entry point
  *
- * Return: Always 0.
+ * Description: Prints diagonals
+ *@n: number of spaces
+ * Return: void
  */
-int main(void)
+
+void print_diagonal(int n)
 {
-print_diagonal(0);
-print_diagonal(2);
-print_diagonal(10);
-print_diagonal(-4);
-return (0);
+int row, num_lines;
+
+if (n <= 0)
+{
+_putchar('\n');
+}
+else
+{
+for (row = 1; row <= n; row++)
+{
+if (row > 1)
+{
+for (num_lines = 1; num_lines <= row - 1; num_lines++)
+{
+_putchar(' ');
+}
+}
+_putchar('\\');
+_putchar('\n');
+}
+}
 }

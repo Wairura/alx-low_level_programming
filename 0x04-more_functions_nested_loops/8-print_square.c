@@ -1,15 +1,30 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_square - entry point
  *
- * Return: Always 0.
+ * Description: Prints square
+ *@size: size of square
+ * Return: void
  */
-int main(void)
+
+void print_square(int size)
 {
-print_diagonal(0);
-print_diagonal(2);
-print_diagonal(10);
-print_diagonal(-4);
-return (0);
+  int row, column;
+
+if (size <= 0)
+{
+_putchar('\n');
+}
+else
+{
+for (row = 1; row <= size; row++)
+{
+for (column = 1; column <= size; column++)
+{
+_putchar('#');
+}
+_putchar('\n');
+}
+}
 }
