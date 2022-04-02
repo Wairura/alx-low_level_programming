@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-
 /**
  * _isnumber - checks if string is a number
  * @s: string
@@ -13,7 +12,6 @@
 int _isnumber(char *s)
 {
 int i, check, d;
-
 i = 0, d = 0, check = 1;
 if (*s == '-')
 i++;
@@ -39,7 +37,6 @@ int main(int argc, char **argv)
 {
 int j, ex, coins, cents, d;
 int c[5] = {25, 10, 5, 2, 1};
-
 ex = 1, j = 0, coins = 0;
 if (argc == 2)
 {
